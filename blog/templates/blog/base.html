@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock%}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="d-flex flex-column flex-md-row align-items-center p-1 px-md-4 mb-7 bg-white border-bottom shadow-sm">
+        <p class="h5 my-0 me-md-auto fw-normal"><a href="{% url 'main_page' %}"><img src="/static/blog/pasha_teqnik_logo.png" alt="говно не прогрузилось"></a>
+      <nav class="my-2 my-md-0 me-md-3">
+          <a class="p-2 text-dark" href="#">Биография</a>
+          <a class="p-2 text-dark" href="{% url 'tickets' %}">Биллеты на концерт</a>
+          <a class="p-2 text-dark" href="#">Контакты</a>
+      </nav>
+    </header>
+</body>
+</html>
